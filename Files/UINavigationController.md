@@ -29,26 +29,26 @@ self.navigationController.interactivePopGestureRecognizer.delegate =(id)self;
 ```objc
 [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 ```
-   
+
 #### 4、设置NavgationBar的字体大小和字体颜色
 
 ```objc
 [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
     NavgationTitle_Color, NSForegroundColorAttributeName,S20Font, NSFontAttributeName, nil]];
 ```
-    
+
 #### 5、设置导航条颜色
 
 ```objc
 [UINavigationBar appearance].barTintColor = NavgationBar_Color;
 ```
-    
+
 #### 6、设置导航条内容的颜色
 
 ```objc
 [[UINavigationBar appearance] setTintColor:NavgationTitle_Color];
 ```
-    
+
 #### 7、设置导航栏不透明
 
 ```objc
@@ -99,8 +99,8 @@ UIBarButtonItem *leftItem1 = [[UIBarButtonItem alloc] initWithImage:image  style
 UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(30,30, 50, 44)];
 imageView.image = image;	//给imageView添加手势，获得点击事件
 UIBarButtonItem *leftItem3 = [[UIBarButtonItem alloc] initWithCustomView:imageView];
-```    
-    
+```
+
 *2)使用按钮做CustomView*
 
 ```objc
@@ -141,13 +141,13 @@ self.navigationItem.title = @"界面一";
 
 #### 11、设置导航栏的titleView
 
-```objc
- self.navigationItem.titleView = /* 自定义View */
+```objective-c
+self.navigationItem.titleView = /* 自定义View */
 ```
 
 #### 12、获取导航控制器中的视图数组
 
-```objc
+```objective-c
 NSArray * arrays = [self.navigationController viewControllers];
 ```
 
